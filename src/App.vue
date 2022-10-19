@@ -1,28 +1,54 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-center">
+        Класифікація військової техніки на зображеннях
+      </div>
+      <v-spacer></v-spacer>
+    </v-app-bar>
+    <v-main>
+      <v-container>
+        <v-row>
+          <v-card>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title>
+                  Модель може розпізнавати наступні види військової техніки
+                </v-list-item-title>
+                <v-list-item-subtitle>
+                  IMR-2, MiG-31, T-72, Tornado-G, Mi-8
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title>
+                  Щоб класифікувати техніку на зображені, завантажте зображення, натисніть Відправити і очікуйте результат
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-card>
+        </v-row>
+        <v-row>
+          <v-file-input label="Оберіть зображення"></v-file-input>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {},
+
+  data: () => ({
+    //
+  }),
+};
+</script>
