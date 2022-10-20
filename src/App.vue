@@ -36,6 +36,9 @@
         <v-row>
           <v-file-input label="Оберіть зображення"></v-file-input>
         </v-row>
+        <v-row>
+          <v-btn>Відправити</v-btn>
+        </v-row>
       </v-container>
     </v-main>
   </v-app>
